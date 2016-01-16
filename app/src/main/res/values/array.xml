@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_name">
+        <item>GetGithubUsers</item>
+        <item>GetGithubPublicGists</item>
+        <item>GetUserReposByLogin</item>
+        <item>P004</item>
+    </string-array>
+
+</resources>
