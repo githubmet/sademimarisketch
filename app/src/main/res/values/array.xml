@@ -4,7 +4,9 @@
         <item>GetGithubUsers</item>
         <item>GetGithubPublicGists</item>
         <item>GetUserReposByLogin</item>
-        <item>P004</item>
+        <item>FragmentLifeCycle</item>
+
+        <item>P006TwoFragment</item>
     </string-array>
 
 </resources>

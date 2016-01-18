@@ -25,6 +25,10 @@
 
         <activity android:name=".GetUserReposByLogin"></activity>
 
+        <activity android:name=".FragmentLifeCycle"></activity>
+
+        <activity android:name=".P006TwoFragment"></activity>
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>  //unutma!
