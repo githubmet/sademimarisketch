@@ -12,18 +12,18 @@ import android.util.Log;
 
 import com.example.incir.myapplication.R;
 
-public class MyFragment extends Fragment {
+public class P005MyFragment extends Fragment {
 
     @Override
-    public void onAttach(Context context) { //Called when a fragment is first attached to its context.
+    public void onAttach(Context context) { //Called when a p005fragment is first attached to its context.
         super.onAttach(context);
-        Log.i("fragment","onAttach");
+        Log.i("p005fragment","onAttach");
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {  // burada Activity elemanlari yakalanamaz. Fakat diger fragmentlardan veri yakalamak icin bir firsat
         super.onCreate(savedInstanceState);
-        Log.i("fragment","onCreate");
+        Log.i("p005fragment","onCreate");
 
     }
 
@@ -31,62 +31,62 @@ public class MyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {  //Fragment xml ve java birbiri ile iliskilendirilir.
         //return super.onCreateView(inflater, container, savedInstanceState);
-        View view=inflater.inflate(R.layout.fragment,container,false);
+        View view=inflater.inflate(R.layout.p005fragment,container,false);
         return view;
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {   //burada Activity elemanlari artik yakalanabilir
         super.onActivityCreated(savedInstanceState);
-        Log.i("fragment","onActivityCreated");
+        Log.i("p005fragment","onActivityCreated");
     }
 
     @Override
     public void onStart() {  //ve artik normal Activity lifecycle
         super.onStart();
-        Log.i("fragment","onStart");
+        Log.i("p005fragment","onStart");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.i("fragment","onResume");
+        Log.i("p005fragment","onResume");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.i("fragment","onPause");
+        Log.i("p005fragment","onPause");
     }
 
     @Override
-    public void onSaveInstanceState(Bundle outState) {  //currently selected item in the listView on fragment. you want push this data to Activity
+    public void onSaveInstanceState(Bundle outState) {  //currently selected item in the listView on p005fragment. you want push this data to Activity
         super.onSaveInstanceState(outState);
-        Log.i("fragment","onSaveInstanceState");
+        Log.i("p005fragment","onSaveInstanceState");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.i("fragment","onStop");
+        Log.i("p005fragment","onStop");
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        Log.i("fragment","onDestroyView");
+        Log.i("p005fragment","onDestroyView");
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.i("fragment","onDestroy");
+        Log.i("p005fragment","onDestroy");
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        Log.i("fragment","onDetach");
+        Log.i("p005fragment","onDetach");
     }
 }
 

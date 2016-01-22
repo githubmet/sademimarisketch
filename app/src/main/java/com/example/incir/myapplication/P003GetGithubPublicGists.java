@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 
 import com.example.incir.myapplication.adapter.GithubPublicGistsRecyclerAdapter;
 import com.example.incir.myapplication.model.GithubPublicGistsStrong;
+import com.example.incir.myapplication.omurgaBackbone.MainActivity;
 
 import java.util.List;
 
@@ -16,24 +17,24 @@ import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 
-public class GetGithubPublicGists extends MainActivity {
+public class P003GetGithubPublicGists extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.getgithubpublicgists);
+        setContentView(R.layout.p003getgithubpublicgists);
 
-        final RecyclerView recyclerViewPublicGists=(RecyclerView)findViewById(R.id.recyclerViewPublicGists);
+        final RecyclerView recyclerViewPublicGistsP003=(RecyclerView)findViewById(R.id.recyclerViewPublicGistsP003);
 
-        recyclerViewPublicGists.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerViewPublicGistsP003.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
-        Call<List<GithubPublicGistsStrong>> githubPublicGistsStrongCall=getNetworkMy().getGithubPublicGists();
+        Call<List<GithubPublicGistsStrong>> githubPublicGistsStrongCall=getNetwork().getGithubPublicGists();
 
         githubPublicGistsStrongCall.enqueue(new Callback<List<GithubPublicGistsStrong>>() {
             @Override
             public void onResponse(Response<List<GithubPublicGistsStrong>> response, Retrofit retrofit) {
-                RecyclerView.Adapter adapter=new GithubPublicGistsRecyclerAdapter(GetGithubPublicGists.this,response.body());
-                recyclerViewPublicGists.setAdapter(adapter);
+                RecyclerView.Adapter adapter=new GithubPublicGistsRecyclerAdapter(P003GetGithubPublicGists.this,response.body());
+                recyclerViewPublicGistsP003.setAdapter(adapter);
             }
 
             @Override

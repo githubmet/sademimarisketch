@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#00FFBB">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewFragmentBottomP006"/>
+        android:id="@+id/textViewFragmentBottomP006"
+        android:minLines="5"
+        android:background="#FFBB00"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="Hello from bottomfragment"/>
 
 </LinearLayout>

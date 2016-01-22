@@ -6,10 +6,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".omurgaBackbone.AddObjectToApp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Menu"
+            android:name=".P001Menu"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,18 +20,23 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".GetGithubUsers"></activity>
 
-        <activity android:name=".GetGithubPublicGists"></activity>
+        <activity android:name=".P002GetGithubUsers"></activity>
 
-        <activity android:name=".GetUserReposByLogin"></activity>
+        <activity android:name=".P003GetGithubPublicGists"></activity>
 
-        <activity android:name=".FragmentLifeCycle"></activity>
+        <activity android:name=".P004GetUserReposByLogin"></activity>
+
+        <activity android:name=".P005FragmentLifeCycle"></activity>
 
         <activity android:name=".P006TwoFragment"></activity>
+
+        <activity android:name=".P007YoutubeToolbar"></activity>
 
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>  //unutma!
 
 </manifest>
+
+    <!--   android:name=".omurgaBackbone.AddObjectToApp"     iste bu ilginc-->

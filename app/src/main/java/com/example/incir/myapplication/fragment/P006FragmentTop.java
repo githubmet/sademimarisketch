@@ -29,7 +29,7 @@ public class P006FragmentTop extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
 
         editTextFragmentTopP006=(EditText)getActivity().findViewById(R.id.editTextFragmentTopP006);
-        Button buttonFragmentTopP006=(Button)getActivity().findViewById(R.id.buttonFragmentTopP006);  //Reutrn the Activity thi fragment is currently associated with;
+        Button buttonFragmentTopP006=(Button)getActivity().findViewById(R.id.buttonFragmentTopP006);  //Reutrn the Activity thi p005fragment is currently associated with;
         buttonFragmentTopP006.setOnClickListener(this);
 
         p006Interface= (P006Interface)getActivity();

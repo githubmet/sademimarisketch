@@ -13,7 +13,7 @@ public class P006TwoFragment extends Activity implements P006Interface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.p006twofragment);  //bize 2 fragment lazim
+        setContentView(R.layout.p006twofragment);  //bize 2 p005fragment lazim
     }
 
     @Override
@@ -22,7 +22,6 @@ public class P006TwoFragment extends Activity implements P006Interface {
 
         P006FragmentBottom p006FragmentBottom=(P006FragmentBottom)getFragmentManager().findFragmentById(R.id.fragmentBottomP006);
         p006FragmentBottom.setFragmentTopDataToTextView(fragmentTopData);
-
 
     }
 }

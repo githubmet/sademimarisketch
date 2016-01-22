@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 
 import com.example.incir.myapplication.adapter.GithubUsersRecyclerAdapter;
 import com.example.incir.myapplication.model.GithubUserStrong;
+import com.example.incir.myapplication.omurgaBackbone.MainActivity;
 
 import java.util.List;
 
@@ -15,21 +16,21 @@ import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 
-public class GetGithubUsers extends MainActivity{
+public class P002GetGithubUsers extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.getgithubusers);
+        setContentView(R.layout.p002getgithubusers);
 
-        final RecyclerView recyclerViewGithubUsers=(RecyclerView)findViewById(R.id.recyclerViewGithubUsers);
-        recyclerViewGithubUsers.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        final RecyclerView recyclerViewGithubUsersP002=(RecyclerView)findViewById(R.id.recyclerViewGithubUsersP002);
+        recyclerViewGithubUsersP002.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
-         Call<List<GithubUserStrong>> githubUserStrongCall= getNetworkMy().getGithubAllUsers();
+         Call<List<GithubUserStrong>> githubUserStrongCall= getNetwork().getGithubAllUsers();  //amazing
         githubUserStrongCall.enqueue(new Callback<List<GithubUserStrong>>() {
             @Override
             public void onResponse(Response<List<GithubUserStrong>> response, Retrofit retrofit) {
-                RecyclerView.Adapter adapter=new GithubUsersRecyclerAdapter(GetGithubUsers.this,response.body());
-                recyclerViewGithubUsers.setAdapter(adapter);
+                RecyclerView.Adapter adapter=new GithubUsersRecyclerAdapter(P002GetGithubUsers.this,response.body());
+                recyclerViewGithubUsersP002.setAdapter(adapter);
             }
 
             @Override

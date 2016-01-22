@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="activity_name">
-        <item>GetGithubUsers</item>
-        <item>GetGithubPublicGists</item>
-        <item>GetUserReposByLogin</item>
-        <item>FragmentLifeCycle</item>
-
+        <item>P002GetGithubUsers</item>
+        <item>P003GetGithubPublicGists</item>
+        <item>P004GetUserReposByLogin</item>
+        <item>P005FragmentLifeCycle</item>
         <item>P006TwoFragment</item>
+        <item>P007YoutubeToolbar</item>
     </string-array>
 
 </resources>
