@@ -11,7 +11,6 @@ import retrofit.http.Path;
 
 import java.util.List;
 
-
 public interface GithubInterface {
     @GET("/users")
     Call<List<GithubUserStrong>> getGithubAllUsers();   //getGithubusersInfoP003()
@@ -21,7 +20,6 @@ public interface GithubInterface {
 
     @GET("/users/{user}/repos")
     Call<List<GithubUserReposStrong>> getUserReposByLogin(@Path("user") String userName);
-
 
     @GET("/users/{user}")
     Call<P007UserDetailStrong> getUserDetailsP007(@Path("user") String loginName);
